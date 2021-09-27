@@ -27,5 +27,5 @@ jobs:
     - name: Upload Maven build artifact
       uses: actions/upload-artifact@v2
       with:
-        name: /home/runner/work/test3/test3/target/demo-sin-bd-0.0.1-SNAPSHOT.jar
-        path: /home/runner/work/test3/test3/target/demo-sin-bd-0.0.1-SNAPSHOT.jar
+        name: demo-sin-bd-0.0.1-SNAPSHOT.jar
+        path: /home/runner/work/test3/test3/target/
