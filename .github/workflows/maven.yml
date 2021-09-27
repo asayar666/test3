@@ -23,10 +23,9 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      working-directory: /github-actions-java-maven
       run: mvn -B package --file pom.xml
     - name: Upload Maven build artifact
       uses: actions/upload-artifact@v2
       with:
         name: demo-sin-bd-0.0.1-SNAPSHOT.jar
-        path: /github-actions-java-maven/target/demo-sin-bd-0.0.1-SNAPSHOT.jar
+        path: /target/demo-sin-bd-0.0.1-SNAPSHOT.jar
